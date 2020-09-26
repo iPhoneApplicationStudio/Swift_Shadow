@@ -13,6 +13,7 @@
 		A978CFD6251F251600D8A50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A978CFD4251F251600D8A50B /* Main.storyboard */; };
 		A978CFD8251F251800D8A50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978CFD7251F251800D8A50B /* Assets.xcassets */; };
 		A978CFDB251F251800D8A50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A978CFD9251F251800D8A50B /* LaunchScreen.storyboard */; };
+		A978CFE4251F27E900D8A50B /* UIView+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A978CFE3251F27E900D8A50B /* UIView+Layer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A978CFD7251F251800D8A50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A978CFDA251F251800D8A50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A978CFDC251F251800D8A50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A978CFE3251F27E900D8A50B /* UIView+Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,20 @@
 				A978CFD0251F251600D8A50B /* SceneDelegate.swift */,
 				A978CFD2251F251600D8A50B /* ViewController.swift */,
 				A978CFD4251F251600D8A50B /* Main.storyboard */,
+				A978CFE2251F277400D8A50B /* Extension */,
 				A978CFD7251F251800D8A50B /* Assets.xcassets */,
 				A978CFD9251F251800D8A50B /* LaunchScreen.storyboard */,
 				A978CFDC251F251800D8A50B /* Info.plist */,
 			);
 			path = Shadow;
+			sourceTree = "<group>";
+		};
+		A978CFE2251F277400D8A50B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A978CFE3251F27E900D8A50B /* UIView+Layer.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				A978CFD3251F251600D8A50B /* ViewController.swift in Sources */,
 				A978CFCF251F251600D8A50B /* AppDelegate.swift in Sources */,
+				A978CFE4251F27E900D8A50B /* UIView+Layer.swift in Sources */,
 				A978CFD1251F251600D8A50B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ONS.Shadow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ONS.Shadow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
