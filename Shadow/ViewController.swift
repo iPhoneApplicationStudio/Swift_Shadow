@@ -16,8 +16,8 @@ final class ViewController: UIViewController
     /// View load method
     override func viewDidLoad() {
         super.viewDidLoad()
-        addDropShadowOnGreenView()
-        //addContactShadowOnGreenView()
+       // addDropShadowOnGreenView()
+        addContactShadowOnGreenView()
     }
     
     private func addDropShadowOnGreenView(){
@@ -34,7 +34,7 @@ final class ViewController: UIViewController
         let width = greenView.bounds.size.width + 2 * size
         let height = size
         let xAxis = -size
-        let yAxis = greenView.bounds.size.height
+        let yAxis = greenView.bounds.size.height + size
         let rect = CGRect(x: xAxis, y: yAxis, width: width, height: height)
         
         greenView.shadowOffSet = CGSize.zero
